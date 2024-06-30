@@ -11,6 +11,9 @@ import org.springframework.stereotype.Component;
 import java.sql.*;
 import java.util.List;
 
+// ТЗ: "2) Компонента записи данных"
+// PS. Вместо передачи строки подключения с паролем - сделел чтенеие url, логина и пароля из файла "config.properties"
+// (на мой взгляд передавать пароль в компоненту - это неверное с точки зрения безопасности)
 @Component
 public class LoginDAO {
     private final JdbcTemplate jdbcTemplate;
